@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="lib/es6-shim.js"></script>
+<script src="lib/angular2-polyfills.js"></script>
+<script src="lib/system.js"></script>
+<script>
+        System.config({
+            defaultJSExtensions: true,
+            map: {
+             'rxjs': 'lib/rxjs'
+            }
+        });
+</script>
+<script src="lib/angular2.dev.js"></script>
+<script src="lib/http.dev.js"></script>
+<script>
+        System.import('app/app').catch(console.log.bind(console));
+</script>
+
+
+<my-app>Loading..</my-app>
